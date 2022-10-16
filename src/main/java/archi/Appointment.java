@@ -93,7 +93,7 @@ public class Appointment {
         this.patient = patient;
     }
 
-    public List<Appointment> reserveAppointment(Patient patient) {
+    public List<Appointment> reserveAppointment() {
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("dev");
         EntityManager manager = factory.createEntityManager();
         Query query = manager.createNamedQuery("Appointment.findAllNone", Appointment.class);

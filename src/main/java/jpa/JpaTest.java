@@ -73,8 +73,8 @@ public class JpaTest {
 		}
 	}
 
-	private void reserveAppointment(Patient patient) {
+	private void reserveAppointment() {
 		Appointment appointment = new Appointment();
-		appointment.reserveAppointment(patient);
+		appointment.reserveAppointment();
 	}
 }
